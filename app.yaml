@@ -4,17 +4,17 @@ deployments:
     target: development
     clusters: 1
     values:
-      repository: https://github.com/kaizentm/gitops-manifests
+      repository: https://github.com/eedorenko/missionedge-appdev-sample-manifests
       branch: dev
       folder: rancher-hello-world
-      zarf_image: [IMAGE_NAME:]:zarf
+      zarf_image: ghcr.io/eedorenko/missionedge-appdev-sample-src:zarf
   production:
     target: production
     clusters: 1
     values:
-      repository: https://github.com/kaizentm/gitops-manifests
+      repository: https://github.com/eedorenko/missionedge-appdev-sample-manifests
       branch: prod
       folder: rancher-hello-world
-      zarf_image: [IMAGE_NAME]:zarf
+      zarf_image: ghcr.io/eedorenko/missionedge-appdev-sample-src:zarf
 
 
