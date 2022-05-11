@@ -41,7 +41,8 @@ The CI/CD workflow contains the following stages:
  |Generate Manifests to Zarf|Generates manifests with [Helm templates](./helm/) and PRs the manifests to the GitOps repo in `dev` branch under `rancher-hello-world` folder. This PR is supposed to be reviewed and merged|
  |Package Zarf| Tags the new image with `zarf` and invokes a workflow in the Control Plane Repo that creates a Zarf package containing application `prod` manifests and `zarf` image and uploads the package to Azure Storage|
 
- _*Note*_: The CI/CD workflow can successfully run after [customizations](#customizations) have been made and the application has been registered by the Platform Team in the Control Plane Repo.  
+
+_*Note*_: The CI/CD workflow can successfully run after [customizations](#customizations) have been made and the application has been registered by the Platform Team in the Control Plane Repo.  
 
 
 ## Customizations
